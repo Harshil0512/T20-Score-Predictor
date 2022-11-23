@@ -6,10 +6,7 @@ import xgboost
 from xgboost import XGBRegressor
 import os
 
-try:
-    pipe = pickle.load(open('t20-score-predictor/pipeline.pkl','rb'))
-except:
-    print(os.getcwd())
+pipe = pickle.load(open('./pipeline.pkl','rb'))
 
 teams = ['Australia',
  'India',
